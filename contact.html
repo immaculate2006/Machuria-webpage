@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Us | Uganda Martyrs University</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+
+   <body>
+      <header>
+         <img src="images/logo.png" class="logo" alt="school logo" width="70" height="70">
+
+         <div>
+            <h1>UGANDA MARTYRS UNIVERSITY</h1>
+            <div class="contact" style="text-align: center; font-size: 15px; color: black;">
+               contact: 0700-446-677 / 0777-456-756 / 0767-564-329
+            </div>
+         </div>
+
+         <form class="search">
+            <input type="text" placeholder="Search..." aria-label="Search">
+            <button type="submit">Search</button>
+         </form>
+      </header>
+
+      <nav>
+         <ul class="sidenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+         </ul>
+      </nav>
+
+      <main>
+         <h3 class="aticle">
+            <article>MOTTO: STRAIN IS TREASURE. ****** SCHOOL WITH DIFFERENCE.</article>
+         </h3>
+
+         <div class="container">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you. Contact Uganda Martyrs University for inquiries, admissions and other university services.</p>
+         </div>
+
+         <section class="contact-info">
+            <div class="info-card">
+               <h2>Get in Touch</h2>
+               <p>Reach out to us using the information below.</p>
+            </div>
+
+            <div class="info-card">
+               <h3>📍 Our Location</h3>
+               <p>Nkozi, Mpigi District, Uganda</p>
+            </div>
+
+            <div class="info-card">
+               <h3>✉ Email Address</h3>
+               <p>Visit the official UMU website for the verified contact email.</p>
+               <a href="https://umu.ac.ug/" target="_blank">Visit UMU Website</a>
+            </div>
+
+            <div class="info-card">
+               <h3>☎ Telephone</h3>
+               <p>Contact the university through its official telephone number.</p>
+            </div>
+
+            <div class="info-card">
+               <h3>🕒 Office Hours</h3>
+               <p>Contact the university to confirm its current office hours.</p>
+            </div>
+         </section>
+
+         <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <p>Fill in the form below with your inquiry.</p>
+
+            <form id="contactForm">
+               <label for="name">Full Name</label>
+               <input type="text" id="name" placeholder="Enter your full name" required>
+
+               <label for="email">Email Address</label>
+               <input type="email" id="email" placeholder="Enter your email" required>
+
+               <label for="subject">Subject</label>
+               <input type="text" id="subject" placeholder="Enter the subject" required>
+
+               <label for="message">Your Message</label>
+               <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+               <button type="submit">Send Message</button>
+               <p id="formStatus" role="status"></p>
+            </form>
+         </section>
+      </main>
+
+      <section class="map-section">
+         <h2>Find Our Campus</h2>
+         <p>Explore the area around Uganda Martyrs University, Nkozi, Uganda.</p>
+
+         <iframe
+            src="https://maps.google.com/maps?q=Uganda%20Martyrs%20University%20Nkozi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            loading="lazy"
+            title="Map showing Uganda Martyrs University">
+         </iframe>
+      </section>
+
+      <script>
+         const form = document.getElementById("contactForm");
+         const status = document.getElementById("formStatus");
+
+         form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            status.textContent = "Demo only: your form is working, but no message has been sent. Connect a backend to receive messages.";
+            form.reset();
+         });
+      </script>
+
+      <footer>
+         &copy; 2026 Uganda Martyrs University <br>
+         ACTA NON VERBA
+      </footer>
+   </body>
+</html>
+
+
